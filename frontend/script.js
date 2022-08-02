@@ -1,6 +1,6 @@
 
 let formComponent = function () {
-    return`
+    return `
 <form>
     <input id="nameInput" type="text" placeholder="Enter your name...."/>
 
@@ -24,7 +24,7 @@ let displayComponent = function () {
 function loadEvent() {
     console.log('page is loaded');
     let root= document.getElementById(`root`);
-    root.insertAdjacentHTML("beforeend",formComponent)
+    root.insertAdjacentHTML("beforeend",formComponent())
     let inputElement = document.querySelector(`input[type="text"]`)
     inputElement.addEventListener("input",function (event){
         let value = event.target.value;
