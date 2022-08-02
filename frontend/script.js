@@ -1,31 +1,10 @@
-console.log("hello")
 
-//Scopes//
-
-let globalVariable = `globálisan elérhető`;
-
-console.log(globalVariable)
-
-function logVariable(){
-    
-    let funcVariable = `Beyoncé`
-    let globalVariable = `metallica`
-    console.log(globalVariable)
-    function changeVal(){
-        let globalVariable =`tre`
-        console.log(globalVariable)
-    }
-   changeVal()
+const tc = function (){
+    const x = `rammstein`;
+    console.log(x)
 }
+tc();
 
-logVariable();
-
-//console.log(funcVariable)
-
-/* Block scope: {} köze írjuk a kódunkat pl 
-{
-    function xy(){
-        function kódja
-    }
-    xy()
-}*/
+/* functiinöknél van hoisting ami azt jelenti,
+ hogy hamarabb elérhető mint ahogy megírjuk a kódban, változók nem hoistolnak
+ */
